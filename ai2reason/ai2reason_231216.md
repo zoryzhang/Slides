@@ -384,10 +384,10 @@ Human can capture concepts in so little context, mimic rules from so few example
 }
 </style>
 <div class="floatingl">
-    <img src="./figs/induction1.png" alt="" width="60%">
+    <img src="../figs/induction1.png" alt="" width="60%">
 </div>
 <div class="floatingr">
-    <img src="./figs/induction2.png" alt="" width="60%">
+    <img src="../figs/induction2.png" alt="" width="60%">
 </div>
 </detaillevel1>
 
@@ -413,7 +413,7 @@ Human can capture concepts in so little context, mimic rules from so few example
 
 ## D. My mind map
 <detaillevel1>
-<img src="./figs/ToAGI.png" width="70%">
+<img src="../figs/ToAGI.png" width="70%">
 </detaillevel1>
 
 <aside>
@@ -447,7 +447,7 @@ Outline recap:
         }
     </style>
     <picture>
-    <img src="./figs/proof_state.png" alt="An image" width="100%">
+    <img src="../figs/proof_state.png" alt="An image" width="100%">
     </picture>
     <figcaption><t>A demo by Patrick Massot</t></figcaption>
 </figure>
@@ -509,5 +509,5 @@ Thank You! Q&A time!
 <div class="floatingr">
 
 **AI2Reason Community@Slack**
-<a border="0" style="cursor:default" rel="nofollow"></a><img src="./figs/qrcode_slack.png" width="100%">
+<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/qrcode_slack.png" width="100%">
 </div>
