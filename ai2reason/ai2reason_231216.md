@@ -412,13 +412,15 @@ Human can capture concepts in so little context, mimic rules from so few example
 - These leads to my mind map to decompose the problem into different levels of modules.
 
 ## D. My mind map
-<detaillevel1>
-<img src="../figs/ToAGI.png" width="70%">
-</detaillevel1>
+<!--<detaillevel1>
+<img src="./mindmap_231217.html" width="70%">
+</detaillevel1>-->
 
 <aside>
 go the interactive html
 </aside>
+
+<iframe src="./mindmap_231217.html" height="100%" width="100%" frameBorder="0"></iframe>
 
 ## E. Which part of it has a different situation from it was to enable the chancing of being better improved?
 - Automated theorem proving is getting more and more attention. Better tools are built.
