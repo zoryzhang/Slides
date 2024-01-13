@@ -93,49 +93,16 @@ section { font-size: 30px; }
 </style>
 Outline recap:
 1. #### **What's AI2Reason**
-    - <span class="morph" style="--morph-name:letterA;">A. Goal</span>
-    - A. Some key features
-    - B. What aspects of intelligent system are covered?
-    - C. What aspects of intelligent system are not covered?
+    - <span class="morph" style="--morph-name:letterA;">A. What's reasoning?</span>
+    - B. Goal of AI2Reason
+    - C. What aspects of intelligent system are covered?
+    - D. What aspects of intelligent system are not covered?
 2. Why important at this moment
 3. Why is it hard but promising now
 4. My Next step
 
-## <span class="morph" style="--morph-name:letterA;">A. Goal</span>
-<style scoped>
-section { font-size: 50px; }
-</style>
-* :x: Just *build* stronger computational model
-* :heavy_check_mark: But **characterize** how to let AI reason in a **truth-seeking, persuasive, and creative** manner.
+## <span class="morph" style="--morph-name:letterA;">A. What's reasoning?</span>
 
-## B. Some key features
-<style scoped>
-.floatingl {
-  float: left;
-  width: 70%;
-}
-.floatingr {
-  float: right;
-  width: 30%;
-  font-size: 30px;
-}
-</style>
-<div class="floatingl">
-
-1. **Qualities**
-* **truth-seeking** (objective): eliminate bias and fallacy
-* **persuasive** (show-your-step): provide reasoning steps as justification
-* **creative** (insightful): less patterned when possible
-</div>
-<div class="floatingr">
-<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/42.png" width="70%">
-
-[When you don't show your reasoning...]
-</div>
-
----
-
-2. **Scope**
 * From everyday problem-solving to scientific innovation
 * Let me examplify.
 
@@ -146,44 +113,27 @@ To examplify this idea, I will cover three examples of reasoning abilities at di
 ---
 
 ### From **solving math word problems**
-* Representative problem-solving skill
-    -  Math: a play ground to study reasoning
-    -  Formal math: established bridge between human and computer
-<aside>
-just like how mathematicians sometimes seriously treat the problem.
-They first formulating it into abstract math question first (translate into formal language, which is not covered), planning on how to solve it (planning), and then solving each subgoal one by one (automated theorem prover)
-</aside>
+- Representative problem-solving skill
+- Huge individual difference
+- People think those who are good at math are smart
 
-<detaillevel3>
-<figure>
-    <style scoped>
-        t {
-        font-size: 10pt;
-        }
-    </style>
-    <picture>
-    <img src="https://file.notion.so/f/f/caa00ba8-21d9-448d-82fa-f3d5392d797b/63825327-80e5-4c19-85a1-df590f49e714/Untitled.png?id=d0ebce8f-3063-46d0-baf3-17496b945fff&table=block&spaceId=caa00ba8-21d9-448d-82fa-f3d5392d797b&expirationTimestamp=1702663200000&signature=S-wT-XsRjMC_rL_lbnNgSkyyfPTF1xEyDHcNfFKogo8&downloadName=Untitled.png" alt="An image" width="60%">
-    </picture>
-    <figcaption><t>Autoformalization with Large Language Models, by Tony Wu(xAI)</t></figcaption>
-</figure>
-</detaillevel3>
+### To **general problem-solving**
+- Detective games / "where did I put my key?"
+- Plan a wedding
+- ...
 
 ---
 
 ### To serve as a **scientific enquiry assistant**
-<aside>
-given a phenomenon of interest, give hypothesis with explantory power, and conduct thought experiment / propose real world experiment to confirm/develop/deny it
-</aside>
-
 <style scoped>
 .floatingl {
   float: left;
-  width: 50%;
+  width: 60%;
 }
 .floatingr {
   float: right;
-  width: 50%;
-  font-size: 30px;
+  width: 40%;
+  font-size: 20px;
 }
 </style>
 <div class="floatingl">
@@ -192,11 +142,12 @@ given a phenomenon of interest, give hypothesis with explantory power, and condu
 * By generating **hypothesis**
 * Reasoning on hypothesis
     * Get **implications**
-    * thought / real world **experiment**
+    * Thought / real world **experiment**
 </div>
 <div class="floatingr">
 
-<img src="https://plato.stanford.edu/entries/thought-experiment/figure6.jpg" width="60%">
+<img src="https://plato.stanford.edu/entries/thought-experiment/figure6.jpg" width="80%">
+
 (Counterexample: give conclusion without observation or experiment)
 
 </div>
@@ -207,11 +158,11 @@ given a phenomenon of interest, give hypothesis with explantory power, and condu
 <style scoped>
 .floatingl {
   float: left;
-  width: 50%;
+  width: 60%;
 }
 .floatingr {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 </style>
 <div class="floatingl">
@@ -231,6 +182,39 @@ given a phenomenon of interest, give hypothesis with explantory power, and condu
 
 
 <detaillevel3>
+
+## B. Goal of AI2Reason
+<style scoped>
+.floatingl {
+  float: left;
+  width: 70%;
+}
+.floatingr {
+  float: right;
+  width: 30%;
+  font-size: 30px;
+}
+</style>
+<div class="floatingl">
+
+1. **Qualities**
+* **Truth-seeking** (objective): eliminate bias and fallacy
+* **Persuasive** (show-your-step): provide reasoning steps as justification
+* **Creative** (insightful): less patterned when possible
+</div>
+<div class="floatingr">
+<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/42.png" width="70%">
+
+[When you don't show your reasoning...]
+</div>
+
+## B. Goal of AI2Reason (cont')
+
+<style scoped>
+section { font-size: 50px; }
+</style>
+* :x: Just *build* stronger computational model
+* :heavy_check_mark: But **characterize** how to let AI reason in a **truth-seeking, persuasive, and creative** manner.
 
 ## C. What aspects of intelligent system are covered?
 <aside>
