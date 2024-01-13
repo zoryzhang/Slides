@@ -47,7 +47,7 @@ aside {
     display: none;
 }
 detaillevel1 {
-    /*display: none;*/
+    display: none;
 }
 detaillevel2 {
     display: none;
@@ -63,16 +63,14 @@ section { font-size: 40px; }
 </style>
 Build and characterize artificial reasoning system that is truth-seeking, persuasive, and creative.
 
-<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/university-of-illinois-1.svg" width="100%">
-</div>
-By   Zory Zhang
+By Zory Zhang @ <a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/university-of-illinois-1.svg" width="2%">
 
 <aside>
 Version:
 - elevator pitch (30s)
-- talk with professors (10min): detaillevel1
-- talk with interested senior (20min): detaillevel2
-- talk with potential collaborators (40min): detaillevel3
+- talk with professors (10min): detaillevel0
+- talk with interested senior (20min): detaillevel1
+- talk with potential collaborators (40min): detaillevel2
 
 Audience can ask for more elaboration on any part of the talk after the standard presentation.
 </aside>
@@ -86,7 +84,7 @@ Goal: introduce and ask for opinion on my long term vision of AI2Reason.
 * ![4](https://icongr.am/material/numeric-4-circle.svg?color=666666) My Next step
 
 <!-- headingDivider: 2 -->
-<!-- footer: 2023 Dec, Zory Zhang: Build and Characterize Artificial Reasoning System -->
+<!-- footer: 2024 Jan, Zory Zhang: Build and Characterize Artificial Reasoning System -->
 <!-- paginate: true -->
 
 # <span class="morph" style="--morph-name:num1;">![1](https://icongr.am/material/numeric-1-circle.svg?color=666666)</span> What's AI2Reason
@@ -107,11 +105,38 @@ Outline recap:
 <style scoped>
 section { font-size: 50px; }
 </style>
-* :x: just *build* stronger computational model
-* :heavy_check_mark: but **characterize** how to let AI reason in a **truth-seeking, persuasive, and creative** manner.
+* :x: Just *build* stronger computational model
+* :heavy_check_mark: But **characterize** how to let AI reason in a **truth-seeking, persuasive, and creative** manner.
 
 ## B. Some key features
-* Human reasoning: from everyday problem-solving to scientific innovation.
+<style scoped>
+.floatingl {
+  float: left;
+  width: 70%;
+}
+.floatingr {
+  float: right;
+  width: 30%;
+  font-size: 30px;
+}
+</style>
+<div class="floatingl">
+
+1. **Qualities**
+* **truth-seeking** (objective): eliminate bias and fallacy
+* **persuasive** (show-your-step): provide reasoning steps as justification
+* **creative** (insightful): less patterned when possible
+</div>
+<div class="floatingr">
+<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/42.png" width="70%">
+
+[When you don't show your reasoning...]
+</div>
+
+---
+
+2. **Scope**
+* From everyday problem-solving to scientific innovation
 * Let me examplify.
 
 <aside>
@@ -122,11 +147,8 @@ To examplify this idea, I will cover three examples of reasoning abilities at di
 
 ### From **solving math word problems**
 * Representative problem-solving skill
-    -  Math: just play ground to study reasoning
-    -  Formal math language: established play ground
-1) :arrow_right: Formulation: translate into formal language
-2) :arrow_right: Planning: goal decomposition
-3) :arrow_right: Automated reasoning: recursively solve subgoals
+    -  Math: a play ground to study reasoning
+    -  Formal math: established bridge between human and computer
 <aside>
 just like how mathematicians sometimes seriously treat the problem.
 They first formulating it into abstract math question first (translate into formal language, which is not covered), planning on how to solve it (planning), and then solving each subgoal one by one (automated theorem prover)
@@ -160,20 +182,23 @@ given a phenomenon of interest, give hypothesis with explantory power, and condu
 }
 .floatingr {
   float: right;
-  width: 40%;
+  width: 50%;
+  font-size: 30px;
 }
 </style>
 <div class="floatingl">
 
-* observer
-* hypothesis generation
-* reasoning on hypothesis as explanation
-* thought experiment / real world experiment
+* Try to **explain** observation
+* By generating **hypothesis**
+* Reasoning on hypothesis
+    * Get **implications**
+    * thought / real world **experiment**
 </div>
 <div class="floatingr">
-<detaillevel1>
-<img src="https://plato.stanford.edu/entries/thought-experiment/figure6.jpg" width="70%">
-</detaillevel1>
+
+<img src="https://plato.stanford.edu/entries/thought-experiment/figure6.jpg" width="60%">
+(Counterexample: give conclusion without observation or experiment)
+
 </div>
 
 ---
@@ -192,15 +217,20 @@ given a phenomenon of interest, give hypothesis with explantory power, and condu
 <div class="floatingl">
 <p>
 
-- Scientific concept / diagram innovation
+- New schema
+- :arrow_right:  New concepts
+- :arrow_right:  Scientific concept / diagram innovation
 - E.g. weight of object :arrow_right:  universal gravity
 </p>
 </div>
 <div class="floatingr">
-<detaillevel1>
+
 <img src="../figs/hypothesis.jpg" alt="From https://www.thoughtco.com/hypothesis-model-theory-and-law-2699066" width="100%">
-</detaillevel1>
+
 </div>
+
+
+<detaillevel3>
 
 ## C. What aspects of intelligent system are covered?
 <aside>
@@ -250,7 +280,7 @@ section { font-size: 32px; }
 We are not as ambitious as you might think. I'd like to clarify some limitation of the diagram for now.
 </aside>
 
-- **Perception / visual reasoning / embodied reasoning**.
+- Perception / visual reasoning / embodied reasoning.
 <aside>
 
 - The input / output is already in / will be a symbolic form, e.g. mathematical formal language, causal relation graph, etc.
@@ -259,16 +289,20 @@ We are not as ambitious as you might think. I'd like to clarify some limitation 
 TODO: draw diagram on perception -> cognition
 </aside>
 
-- **Decision making and ethics**.
+- Decision making and ethics.
 <aside>
 
 - As an assistant.
 </aside>
 
-- **Consciousness / self-awareness / active learning**.
+- Consciousness / self-awareness / active learning.
 <aside>
 The motivation of seeking explanatory power, creativity, and the desire to reason are hard-coded in the system. In other word, a zombie AI that has no consciousness.
 </aside>
+
+- Latency / efficiency / scalability.
+
+</detaillevel3>
 
 # 2 Why important at this moment
 <style scoped>
@@ -298,12 +332,12 @@ I'd like to claim the necessity of AI2Reason by reducing it as the question of n
 </detaillevel3>
 
 - LLMs **dream/hullucinate/bullshit**. They care about
-    - :heavy_check_mark: what word will high likely follow
+    - :heavy_check_mark: what word will high likely follow the previous
     - :heavy_check_mark: entertain human
     -  :x: truth
 - We :hearts: LLMs because
     - :heavy_check_mark: creativity
-    -  :x: intelligent system with strong generalization
+    -  :x: intelligent system with strong **generalizability** that can be said as doing "reasoning"
 
 <detaillevel2>
 <style scoped>
@@ -325,26 +359,26 @@ I'd like to claim the necessity of AI2Reason by reducing it as the question of n
     - :speech_balloon: make use of the infinite expressive power of **natural language**
     - :thought_balloon: take LLMs as working (not satisfying) **creative engine**
 - GPT-4 system:
-    - working example
-    - isn't doing that bad.
+    - A working (not that bad) example
 ## B. **Readiness** cont'
-- Psychologists and philosophers have been studying reasoning for a while.
-- Programming logic community have been studying logic for a while.
-- Recent progress: TODO
+- **Cognitive scientist** have been studying reasoning for a while
+    - Relatively complete charaterization of the analogical reasoning procedure
+- **Formal method community / philosopher** have been studying logic for a while
+    - Expressive formal logic: dependent type theory
 
 ## C. **Mutual benefit**
-- Mutual benefit between areas
-- :arrow_backward: Taking inspiration from theories on reasoning to AI facilitates the development of AGI.
-- :arrow_forward: At the same time, building computational model is a good way to **complement/connect** current normative/philosophical/explanatory theory and descriptive/psychological understandings. Thus this is a way to characterize what is plausible for such kind a system.
+- Mutual benefit between "**building**" and "**characterizing**"
+* :arrow_backward: Taking inspiration from theories on reasoning facilitates the development of AI.
+* :arrow_forward: At the same time, building computational model is a good way to **complement/connect** current normative/philosophical/explanatory theory and descriptive/psychological understandings. (Thus this is a way to characterize what is plausible for such kind a system.)
 
 <aside>
 Connection: by providing implementation of descriptive theories, we can fill in practical gaps. By providing implementation of normative theories, we suggest feasible instantiation or alternatives.
 </aside>
 
 ## D. **Social impact**
-- :mortar_board: Educational **diagram** of reasoning for future generations.
-- :two_men_holding_hands: Promote interdisciplinary collaboration. By promoting AI2Reason, we help foster an **environment** where researchers collaborate to advance AI technology more holistically.
-- :high_brightness: Positive future for humanity: **advance boundary** of intelligence, shape the future of humanity positively
+* :mortar_board: Educational **diagram** of reasoning for future generations.
+* :two_men_holding_hands: Promote interdisciplinary collaboration. By promoting AI2Reason, we help foster an **environment** where researchers collaborate to advance AI technology more holistically.
+* :high_brightness: Positive future for humanity: **advancing boundary** of intelligence, shape the future of humanity positively
 
 <aside>
 - AI2Reason can be an educational diagram for future generations to practice their reasoning skills, as an act to improve humanity.
@@ -362,8 +396,7 @@ Outline recap:
     - <span class="morph" style="--morph-name:letterA;">A. Human is so smart</span>
     - B. My Point of view
     - C. Under this view, how to frame the problem?
-    - D. Mind map
-    - E. Which part of it has different situation than it was to be better improved?
+    - D. What's different from before?
 4. My Next step
 
 
@@ -374,59 +407,50 @@ Human can capture concepts in so little context, mimic rules from so few example
 - "The word "five" has the Roman numeral "iv" in it? Show me how you developments your answer."
 </aside>
 
-<detaillevel1>
 <style scoped>
 .floatingl {
   float: left;
-  width: 50%;
+  width: 30%;
 }
 .floatingr {
   float: left;
-  width: 50%;
+  width: 30%;
 }
 </style>
+
+(Concept learning)
 <div class="floatingl">
-    <img src="../figs/induction1.png" alt="" width="60%">
+    <img src="../figs/induction1.png" alt="" width="100%">
 </div>
 <div class="floatingr">
-    <img src="../figs/induction2.png" alt="" width="60%">
+    <img src="../figs/induction2.png" alt="" width="100%">
 </div>
-</detaillevel1>
 
 ## B. My Point of view for AI2Reason
-- People know LLM sucks in reasoning, and they've tried different heuristic-inspired methods to improve its performance on benchmarks.
-<!--- TODO: recent examples -->
-- Yet few people sit down and think about what is reasoning. This topic has a long history in philosophy and psychology. Why not learn from them?
+* People know LLM sucks in reasoning
+    - Tried **heuristic-based** methods
+    - Most try to improve its "performance" on "benchmarks".
+* Yet few people **sit down and think about what is reasoning**.
+    - Cognition >> pattern matching. Why expect solving reasoning in just a couple of years?
+* Long history in philosophy and psychology. Why not learn from them?
 
 ## C. My framing of the problem
-- Before getting to the next level, the computational model I hope to build right now is an auto-differential neural-symbolic system.
-<aside>
+**Auto-differential neural-symbolic computational model.**
+- A **preliminary** plan, only suitable for early stage
+- :arrow_right: **High inductive bias**
+- :arrow_right: **High data efficiency**
+- :arrow_right: **Less flexible** (opposite to data-driven)
 
-- Neural-symbolic system has high inductive bias.
-- Although the trend of AI research shows a shift from more symbolic / hand-crafted knowledge to more data-driven / weaker inductive bias, our understanding of reasoning is still in its early stage.
-- We need neural-symbolic system as an intermediate solution to have better data efficiency.
-</aside>
-
-- AI4MATH? It is just a play ground. Math is the most abstract and formal yet established language we have. It is the best way to test the reasoning ability of an AI system.
-
-- Automated theorem proving? Again, a play ground that is well-defined and established.
-
-- These leads to my mind map to decompose the problem into different levels of modules.
-
-## D. [My mind map](./mindmap_231217.html)
-<!--<detaillevel1>
-<img src="./mindmap_231217.html" width="70%">
-</detaillevel1>-->
-
-<aside>
-go the interactive html
-</aside>
-
+<detaillevel3>
 <iframe src="./mindmap_231217.html" height="100%" width="100%" frameBorder="0"></iframe>
+</detaillevel3>
 
-## E. Which part of it has a different situation from it was to enable the chancing of being better improved?
-- Automated theorem proving is getting more and more attention. Better tools are built.
-- Language is powerful. LLMs enable the connection of different modules. The stronger LLMs become, the better future these is.
+## D. What's different from before?
+Why haven't been solved before but promising now?
+* Automated theorem proving is getting more and more attention. Better tools and **infrastructure** are built.
+* Language is powerful.
+    - LLMs enable the connection of different modules.
+    - The stronger LLMs become, the better quantitative performance the system can show.
 
 # 4 My Next step
 Outline recap:
@@ -434,15 +458,24 @@ Outline recap:
 2. Why important at this moment
 3. Why is it hard but promising now
 4. #### **My Next step**
-    - An automated theory prover (ATP) with analogy
+    - Study reasoning process in doing math
 
 
-## <!---fit---> An automated theory prover (ATP) with analogy
-* that writes proofs in **verifiable** mathematical formal language
-* that provides most insightful proofs and the **motivation** of giving these proofs
-* **[new]** that can draw inspiration bu make analogy between subgoals in hand and **proof flows** of known lemmas
+## <!---fit---> Study reasoning process in doing math
+* Humans favor **insightful** proofs
+* Humans learn from **motivation** of proofs
+* Humans perform **different kinds of reasoning** when doing math
+    - Draw analogy to connect past experience with present
+    - ...
 
----
+## <!---fit---> Study reasoning process in doing math cont'
+
+* AI4MATH? It is just a play ground. Math is the most abstract and formal yet established language we have. It is the best way to test the reasoning ability of an AI system.
+
+* Automated theorem proving? Again, a play ground that is well-defined and established.
+
+* **Verifiable** mathematical formal language: a preliminary interface between human and computer on doing proof
+
 <detaillevel1>
 <figure>
     <style>
@@ -457,35 +490,7 @@ Outline recap:
 </figure>
 </detaillevel1>
 
-# 5 Community
-<style scoped>
-section { font-size: 30px; }
-</style>
-Outline recap:
-1. What's AI2Reason
-2. Why important at this moment
-3. Why is it hard but promising now
-4. My Next step
-5. #### **Community**
-    - People I consider highly relevant to this direction
-    - Me >_<
-
-## <!--fit--> People I consider highly relevant to this direction
-<style scoped>
-section { font-size: 25px; }
-</style>
-- Yuhuai Tony Wu @xAI: Minerva and autoformalization
-- Brenden Lake @NYU: systematicity
-- Denny Zhou @Google: CoT stuff
-- Noah Goodman @Stanford
-- Josh Tenenbaum @MIT
-- Jeremy Avigad @CMU
-- Kaiyu Yang @Caltech: LeanDojo
-- Kenneth D. Forbus @Northwestern
-- Tom Griffiths @Princeton
-- ...
-
-## Me >_<
+# 5 Me >_<
 <style scoped>
 .floatingl {
   float: left;
@@ -513,5 +518,5 @@ Thank You! Q&A time!
 <div class="floatingr">
 
 **AI2Reason Community@Discord**
-<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/discord_qr.png" width="100%">
+<a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/discord_qr.png" width="90%">
 </div>

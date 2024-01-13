@@ -1,0 +1,78 @@
+\documentclass[border=5pt,tikz,dvipsnames]{standalone}
+
+\usepackage{amsmath,amssymb} % for \text
+\usepackage{physics} % for \abs
+\usepackage{xspace} % for \xspace
+\usepackage{bm} % for bold math \bm
+\usepackage{setspace} \doublespacing
+
+\usetikzlibrary{positioning} % for position relative to node
+\usetikzlibrary{arrows.meta} % for arrow size
+\usetikzlibrary{calc} % for computing coordinates
+\tikzset{>=latex} % set default arrow head as latex
+
+% TIKZ STUFF
+\tikzstyle{mysmallarrow}=[-{Latex[length=6,width=6]},#1!80!black,thick,line width=1.6]
+\def\connect[#1](#2)!#3!(#4){
+  \draw[#1] (#2) |- ($(#2)!#3!(#4)$) node[pos=0.5] (#2-#4-1) {}
+  -| (#4) node[pos=0.5] (#2-#4-2) {}
+}
+\colorlet{mywhite}{white!0!black}
+\colorlet{myred}{red!80!black}
+\colorlet{myblue}{blue!80!black}
+\colorlet{mygreen}{green!50!black}
+\colorlet{myorange}{orange!80!yellow!90!red!90!black}
+\tikzstyle{mycomment}=[inner sep=1pt,scale=1,align=left]
+\tikzstyle{mybox}=[draw,#1!80!black,fill=#1!95!black!20,inner sep=5pt,outer sep=3pt,
+                   thick,rounded corners=3pt,align=center,font=\bfseries]
+\tikzstyle{mysmallbox}=[mybox=#1,outer sep=1.5pt]
+\tikzstyle{myarrow}=[-{Latex[length=8,width=8]},#1!80!black,thick,line cap=round,line width=2]
+
+% Informal visualization of the divide-and-conquer tree
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+  \def\h{2} % vertical space between rows
+  \def\w{0.5} % horizontal space between two main branches
+  
+  % 0
+  \node[mysmallbox=myred] (0)  {
+    $\vdash \lim_{N \to \infty} \sum_{n=1}^N \frac{1}{n(n+1)}=1$
+   };
+  
+  % 01
+  \path (0)++(0,-\h) node[mysmallbox=myred] (01) {
+    $h_{00}$ \\
+    $\vdash \lim_{N \to \infty} \sum_{n=1}^N \frac{1}{n(n+1)}=1$
+   };
+  \draw[myarrow=myred] (0) -- (01);
+
+  % 00
+  \node[mysmallbox=myorange, left=\w of 01] (00) {
+    $\vdash h_{00}: \sum_{n=1}^N (\frac{1}{n} - \frac{1}{n+1}) = 1-\frac{1}{N+1} $
+   };
+  \draw[myarrow=myorange] (0) -- (00);
+  
+  % 011
+  \path (01)++(0,-\h) node[mysmallbox=myred] (011) {
+    $h_{00}, h_{000}$ \\
+    $\vdash \vdash \lim_{N \to \infty} \sum_{n=1}^N \frac{1}{n(n+1)}=1 $
+  };
+  \draw[myarrow=myred] (01) -- (011);
+  
+  % 0110
+  \path (011)++(0,-\h) node[mysmallbox=myred] (0110) {
+    $h_{000}$ \\
+    $\vdash \lim_{N \to \infty} (1-\frac{1}{N+1}) = 1 $
+  };
+  \draw[myarrow=myred] (011) -- (0110);
+  
+  % 010
+  \node[mysmallbox=mygreen, left=\w of 011] (010) {
+    $\vdash h_{000}: \frac{1}{n} - \frac{1}{n+1} = \frac{1}{n(n+1)} $
+  };
+  \draw[myarrow=mygreen] (01) -- (010);
+  
+\end{tikzpicture}
+
+\end{document}
