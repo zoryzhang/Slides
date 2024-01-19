@@ -190,7 +190,7 @@ Go beyond case-by-case abstraction
 <style scoped>
 .floatingl {
   float: left;
-  width: 70%;
+  width: 60%;
 }
 .floatingr {
   float: right;
@@ -200,9 +200,9 @@ Go beyond case-by-case abstraction
 </style>
 <div class="floatingl">
 
-1. **Qualities**
-* **Truth-seeking** (objective): eliminate bias and fallacy
-* **Persuasive** (show-your-step): provide reasoning steps as justification
+1. Qualities
+* **Truth-seeking** (objective): mitigate bias and fallacy
+* **Persuasive** (show-your-step): provide good justification
 * **Creative** (insightful): less patterned when possible
 </div>
 <div class="floatingr">
@@ -212,11 +212,19 @@ Go beyond case-by-case abstraction
 </div>
 
 ## B. Goal of AI2Reason (cont')
+2. Viewpoints
+* **Building**: ask for powerful **artificial** intelligence
+* **Modeling**: use computational model to **formalize** theories of **human** intelligence.
+    - Psychological/descriptive/behavioral observation
+    - Philosophical/normative/prescriptive theory
+* **Characterizing**: both work on **intelligence**, therefore suggest **plausible** approaches to achieve intelligence.
 
+## B. Goal of AI2Reason (cont')
 <style scoped>
 section { font-size: 50px; }
 </style>
-* :x: Just *build* powerful computational model
+
+* :x: Just build powerful model
 * :heavy_check_mark: But **characterize** potential approaches to let artificial intelligence be **truth-seeking, persuasive, and creative**
 
 ## C. What aspects of intelligent system are covered?
@@ -224,33 +232,17 @@ section { font-size: 50px; }
 These are just some terminologies for people who happen to know them.
 </aside>
 
-<style scoped>
-.floatingl {
-  float: left;
-  width: 100%;
-}
-.floatingr {
-  float: right;
-  width: 30%;
-}
-section { font-size: 32px; }
-</style>
-<div class="floatingl">
-<p>
+- Deductive, inductive, abductive reasoning (Peirce)
+- Categorization and conceptualization
+- Planning
+- Causality
 
-- **Deductive, inductive, abductive reasoning**
+## C. What aspects of intelligent system are covered? (cont')
 
-- **Categorization and conceptualization**
-
-- **Planning**
-
-- **Causality**
-
-- **Explanation seeking**
-
-- (All of them can be exemplified in doing math :arrow_right: my playground/comfort zone)
-</p>
-</div>
+- All of them can be exemplified in doing math
+- :arrow_right: My playground/comfort zone
+    - Math is the most abstract and formal yet established language we have.
+    - The best way for me to test the reasoning ability of an AI system.
 
 <detaillevel1>
 <div class="floatingr">
@@ -261,12 +253,12 @@ section { font-size: 32px; }
 </div>
 </detaillevel1>
 
-## D. What aspects of intelligent system are NOT covered?
+## D. What aspects of intelligent system are **NOT** covered?
 <aside>
 We are not as ambitious as you might think. I'd like to clarify some limitations of the diagram for now.
 </aside>
 
-- Perception / visual reasoning / embodied reasoning.
+- Perception / visual reasoning / embodied reasoning
 <aside>
 
 - The input/output is already in / will be a symbolic form, e.g. mathematical formal language, causal relation graph, etc.
@@ -275,20 +267,18 @@ We are not as ambitious as you might think. I'd like to clarify some limitations
 TODO: draw diagram on perception -> cognition
 </aside>
 
-- Decision-making and ethics.
+- Decision-making and ethics
 <aside>
 
 - As an assistant.
 </aside>
 
-- Consciousness / self-awareness / active learning.
+- Consciousness / self-awareness / active learning
 <aside>
 The motivation of seeking explanatory power, creativity, and the desire to reason are hard-coded in the system. In other words, a zombie AI that has no consciousness.
 </aside>
 
-- Latency / efficiency / scalability.
-
-</detaillevel3>
+- Latency / efficiency / scalability
 
 # 2 Why important at this moment
 <style scoped>
@@ -326,54 +316,41 @@ blockquote {
 <div class="floatingl">
 
 LLMs **dream/hallucinate/bullshit** because they care about:
-- :heavy_check_mark: what word will highly likely follow the previous
-- :heavy_check_mark: entertain human
--  :x: truth
+* :heavy_check_mark: what word will highly likely follow the previous
+* :heavy_check_mark: entertain human
+* :x: truth and reasons
 </div>
 
 <div class="floatingr">
 
 We :hearts: LLMs because:
-- :heavy_check_mark: stochastic Language Processing Units (LPUs) <a href="#footnote-1">[1]</a>
-- :heavy_check_mark: creativity
--  :x: intelligent sys w/ **generalizability**
+* :heavy_check_mark: stochastic Language Processing Units (LPUs) <a href="#footnote-1">[1]</a>
+* :heavy_check_mark: creativity
+*  :x: intelligent sys w/ **generalizability**
 </div>
-
-<detaillevel2>
-<style scoped>
-.floatingc {
-  float: right;
-  width: 85%;
-}
-</style>
-- E.g. Ask "show me why gcd (n,n-1) = 1":
-<div class="floatingc">
-  <img src="../figs/chatgpt231214.png" alt="" width="83%">
-</div>
-</detaillevel2>
 
 
 ## B. **Readiness**
 - More feasible than ever. We can
     - :repeat_one: **neuralize** many modules via auto-differentials
-    - :speech_balloon: make use of the infinite expressive power of **natural language**
-    - :thought_balloon: take LLMs as working (not satisfying) "**creative engine**"
+    - :speech_balloon: utilize infinite expressive power of **natural language**
+    - :thought_balloon: LLMs as working <span style="color:gray">(not satisfying)</span> "**creative engine**"
 - GPT-4 system:
-    - A working (not that bad) example
+    - A working <span style="color:gray">(and not that bad)</span> example of such sys
 ## B. **Readiness** cont'
 - **Cognitive scientists** have been studying reasoning for a while
     - Relatively complete charaterization of the analogical reasoning procedure
 - **Formal method community & philosophers** have been studying logic for a while
     - Expressive formal logic: dependent type theory
+    - Lay out the foundation of deduction
+- **ML** model as inductive reasoner
 
 ## C. **Mutual benefit**
-- Mutual benefit between "**building**" and "**characterizing**"
-* :arrow_backward: Taking inspiration from theories on reasoning facilitates the development of AI.
-* :arrow_forward: At the same time, building computational model is a good way to **complement/connect** current normative/philosophical/explanatory theory and descriptive/psychological understandings. (Thus this is a way to characterize what is **plausible** for such kind a system.)
-
-<aside>
-Connection: by providing implementation of descriptive theories, we can fill in practical gaps. By providing implementation of normative theories, we suggest feasible instantiation or alternatives.
-</aside>
+Mutual benefit between "**building**" :left_right_arrow: "**modeling**"
+* :arrow_backward: Inspiration from reasoning theories facilitates AI
+* :arrow_forward: Computational model help to **formalize** theories
+    - Find and fill in practical gaps
+* Characterization: suggest feasible instantiation or alternatives
 
 ## D. **Social impact**
 * :mortar_board: Educational **diagram** of reasoning for future generations.
@@ -403,10 +380,6 @@ Outline recap:
 ## <span class="morph" style="--morph-name:letterA;">A. Human is so smart</span>
 "Humans can capture concepts in so little context, mimic rules from so few examples, yet still be able to generalize to genuinely new situations."
 
-<aside>
-- "The word "five" has the Roman numeral "iv" in it? Show me how you develops your answer."
-</aside>
-
 <style scoped>
 .floatingl {
   float: left;
@@ -418,7 +391,7 @@ Outline recap:
 }
 </style>
 
-(Concept learning)
+<span style="font-size: 70%">(Concept learning)</span>
 <div class="floatingl">
     <img src="../figs/induction1.png" alt="" width="100%">
 </div>
@@ -428,21 +401,20 @@ Outline recap:
 
 ## A. Human is so smart (cont')
 - Abstraction & categorization
-    - Family resemblance: no one feature is common to all members of a category
-- Structural relation understanding is uniquely human
-    - Not even GPT-4
+    - Family resemblance: no single feature is common to all members of a category
+- Structural relational understanding is uniquely human
+    - Not even GPT-4 <a href="#footnote-1">[2]</a>
 
 ## B. My point of view for AI2Reason
 * People know LLM sucks in reasoning
     - Tried **heuristic-based** methods
-    - Most try to improve its "performance" on "benchmarks".
+    - Most try to improve its "performance" on "benchmarks"
 * Yet few people **sit down and think about what reasoning is**.
     - Cognition >> pattern matching. Why expect to solve reasoning in just a couple of years?
-* Long history in philosophy and psychology. Why not learn from them?
+* Long history in cog sci. Why not learn from them?
 
 ## C. My framing of the problem
-1. Auto-differential **neural-symbolic** computational model
-- E.g. LLM-modulo
+1. Auto-differential **neural-symbolic** model
 - A. **High inductive bias**
     - :arrow_right: **High data / sample efficiency** :+1:
     - :arrow_right: **Less flexible** (opposite to data-driven) :-1:
@@ -450,9 +422,10 @@ Outline recap:
 - B. Only use neural components when necessary
     - Interpretability
 
-<detaillevel3>
-<iframe src="./mindmap_231217.html" height="100%" width="100%" frameBorder="0"></iframe>
-</detaillevel3>
+## C. My framing of the problem (cont')
+1. **Auto-differential** neural-symbolic model
+- Back-propagation is beautiful yet seductive
+- Causality is the elephant in the room
 
 ## C. My framing of the problem (cont')
 2. Start with **mathematical formal language** as **gymnasium / playground**
@@ -461,7 +434,7 @@ Outline recap:
 - Can exemplify **many reasoning abilities** and all hard
 
 ## C. My framing of the problem (cont')
-3. Low-hanging fruit: deliberate reasoning.
+3. Low-hanging fruit: deliberate reasoning
 - Core: **Working memory** - Long-term memory interaction
 - Mechanism: system 2 **supervises** system 1 and takes over when necessary
 - Property: **flexible** computation time
@@ -481,7 +454,6 @@ Outline recap:
 4. #### **My Next step**
     - Study reasoning process in doing math
 
-
 ## <!---fit---> Study reasoning process in doing math
 * Humans favor **insightful** proofs
 * Humans learn from **motivation** of proofs
@@ -491,11 +463,15 @@ Outline recap:
 
 ## <!---fit---> Study reasoning process in doing math cont'
 
-* AI4MATH? It is just a playground. Math is the most abstract and formal yet established language we have. It is the best way to test the reasoning ability of an AI system.
-
 * Automated theorem proving? Again, a playground that is well-defined and established.
 
 * **Verifiable** mathematical formal language: a preliminary interface between humans and computers in doing proof
+
+## Seek organic integration for symbolic
+- automated planner & automated logical solver
+    - E.g. LLM-modulo
+- how to go beyond "neural-symbolic" inference
+    - want if I want to train?
 
 <detaillevel1>
 <figure>
@@ -545,7 +521,21 @@ Thank You! Q&A time!
 
 
 # References
-<h4></h4>
-<sub><sub><sub><ol>
-    <li id="footnote-1">Taken from Omar Khattab. (https://twitter.com/lateinteraction/status/1736119027997831210)</li>
-</ol></sub></sub></sub>
+<style scoped>
+section { font-size: 23px; }
+</style>
+
+<ol>
+<li id="footnote-1">Taken from Omar Khattab. (https://twitter.com/lateinteraction/status/1736119027997831210)</li>
+<li id="footnote-2">Emergent analogical reasoning in large language models.</li>
+</ol>
+
+# Backup slides
+- E.g. Ask "show me why gcd (n,n-1) = 1":
+<div class="floatingc">
+  <img src="../figs/chatgpt231214.png" alt="" width="83%">
+</div>
+
+---
+
+<iframe src="./mindmap_231217.html" height="100%" width="100%" frameBorder="0"></iframe>
