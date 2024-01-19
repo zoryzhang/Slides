@@ -6,6 +6,7 @@ marp: true
 theme: gaia
 #theme: uncover
 
+math: mathjax
 transition: fade
 
 style: |
@@ -76,7 +77,7 @@ Audience can ask for more elaboration on any part of the talk after the standard
 </aside>
 
 # Outline
-Goal: introduce and ask for opinion on my long term vision of AI2Reason.
+Goal: introduce and ask for opinions on my long-term vision of AI2Reason.
 
 * <span class="morph" style="--morph-name:num1;">![1](https://icongr.am/material/numeric-1-circle.svg?color=666666)</span> What's AI2Reason
 * ![2](https://icongr.am/material/numeric-2-circle.svg?color=666666) Why important at this moment
@@ -93,32 +94,32 @@ section { font-size: 30px; }
 </style>
 Outline recap:
 1. #### **What's AI2Reason**
-    - <span class="morph" style="--morph-name:letterA;">A. What's reasoning?</span>
-    - B. Goal of AI2Reason
-    - C. What aspects of intelligent system are covered?
-    - D. What aspects of intelligent system are not covered?
+    - <span class="morph" style="--morph-name:letterA;">A. What's reasoning</span>
+    - B. Goals of AI2Reason
+    - C. What aspects of intelligent system are covered
+    - D. What aspects of intelligent system are NOT covered
 2. Why important at this moment
 3. Why is it hard but promising now
 4. My Next step
 
-## <span class="morph" style="--morph-name:letterA;">A. What's reasoning?</span>
-
+## <span class="morph" style="--morph-name:letterA;">A. What's reasoning</span>
+* Rapidly growing subfield of Cognitive Science
+    - Multivalent
+* Abstraction & categorization :arrow_right: **generalizable**
+    - Different levels of abstraction
+    - Manipulate over abstract entities
 * From everyday problem-solving to scientific innovation
-* Let me examplify.
-
-<aside>
-To examplify this idea, I will cover three examples of reasoning abilities at different level ...
-</aside>
+    - Let me exemplify
 
 ---
 
-### From **solving math word problems**
+### From **solving math problems**
 - Representative problem-solving skill
-- Huge individual difference
-- People think those who are good at math are smart
+    - Huge individual difference
+    - People think those who are good at math are smart
 
 ### To **general problem-solving**
-- Detective games / "where did I put my key?"
+- Detective games / "Where did I put my key?"
 - Plan a wedding
 - ...
 
@@ -141,37 +142,39 @@ To examplify this idea, I will cover three examples of reasoning abilities at di
 * Try to **explain** observation
 * By generating **hypothesis**
 * Reasoning on hypothesis
-    * Get **implications**
-    * Thought / real world **experiment**
+    * Get **implications** / predictions
+    * Thought / real world **experiment** to exam predictions
+    * **Revise** hypothesis
 </div>
 <div class="floatingr">
 
 <img src="https://plato.stanford.edu/entries/thought-experiment/figure6.jpg" width="80%">
 
-(Counterexample: give conclusion without observation or experiment)
+(Counterexample: give conclusion w/o observation or experiment)
 
 </div>
 
 ---
 
 ### To **develop new theory**
+Go beyond case-by-case abstraction
 <style scoped>
 .floatingl {
   float: left;
-  width: 60%;
+  width: 70%;
 }
 .floatingr {
   float: left;
-  width: 40%;
+  width: 30%;
 }
 </style>
 <div class="floatingl">
 <p>
 
-- New schema
-- :arrow_right:  New concepts
-- :arrow_right:  Scientific concept / diagram innovation
-- E.g. weight of object :arrow_right:  universal gravity
+1) Repeated experience :arrow_right: learn **schema**
+2) :arrow_right:  New **concepts**
+3) :arrow_right:  Scientific concept / **diagram** innovation
+    - E.g. weight of object :arrow_right:  universal gravity
 </p>
 </div>
 <div class="floatingr">
@@ -183,7 +186,7 @@ To examplify this idea, I will cover three examples of reasoning abilities at di
 
 <detaillevel3>
 
-## B. Goal of AI2Reason
+## B. Goals of AI2Reason
 <style scoped>
 .floatingl {
   float: left;
@@ -213,18 +216,18 @@ To examplify this idea, I will cover three examples of reasoning abilities at di
 <style scoped>
 section { font-size: 50px; }
 </style>
-* :x: Just *build* stronger computational model
-* :heavy_check_mark: But **characterize** how to let AI reason in a **truth-seeking, persuasive, and creative** manner.
+* :x: Just *build* powerful computational model
+* :heavy_check_mark: But **characterize** potential approaches to let artificial intelligence be **truth-seeking, persuasive, and creative**
 
 ## C. What aspects of intelligent system are covered?
 <aside>
-These are just some terminalogies for people who happen to know them.
+These are just some terminologies for people who happen to know them.
 </aside>
 
 <style scoped>
 .floatingl {
   float: left;
-  width: 70%;
+  width: 100%;
 }
 .floatingr {
   float: right;
@@ -235,7 +238,7 @@ section { font-size: 32px; }
 <div class="floatingl">
 <p>
 
-- **Deductive, inductive, abdutive reasoning**
+- **Deductive, inductive, abductive reasoning**
 
 - **Categorization and conceptualization**
 
@@ -245,35 +248,34 @@ section { font-size: 32px; }
 
 - **Explanation seeking**
 
-- (All of them are examplified in doing math)
+- (All of them can be exemplified in doing math :arrow_right: my playground/comfort zone)
 </p>
 </div>
-<div class="floatingr">
-  <detaillevel1>
-  <img src="../figs/word_learning.png" alt="" width="70%">
-  </detaillevel1>
-</div>
-<div class="floatingr">
-  <detaillevel1>
-  <img src="../figs/word_learning2.png" alt="" width="80%">
-  </detaillevel1>
-</div>
 
-## D. What aspects of intelligent system are not covered?
+<detaillevel1>
+<div class="floatingr">
+  <img src="../figs/word_learning.png" alt="" width="70%">
+</div>
+<div class="floatingr">
+  <img src="../figs/word_learning2.png" alt="" width="80%">
+</div>
+</detaillevel1>
+
+## D. What aspects of intelligent system are NOT covered?
 <aside>
-We are not as ambitious as you might think. I'd like to clarify some limitation of the diagram for now.
+We are not as ambitious as you might think. I'd like to clarify some limitations of the diagram for now.
 </aside>
 
 - Perception / visual reasoning / embodied reasoning.
 <aside>
 
-- The input / output is already in / will be a symbolic form, e.g. mathematical formal language, causal relation graph, etc.
+- The input/output is already in / will be a symbolic form, e.g. mathematical formal language, causal relation graph, etc.
 - Goal of reasoning is already given and assumed to be understood.
 
 TODO: draw diagram on perception -> cognition
 </aside>
 
-- Decision making and ethics.
+- Decision-making and ethics.
 <aside>
 
 - As an assistant.
@@ -281,7 +283,7 @@ TODO: draw diagram on perception -> cognition
 
 - Consciousness / self-awareness / active learning.
 <aside>
-The motivation of seeking explanatory power, creativity, and the desire to reason are hard-coded in the system. In other word, a zombie AI that has no consciousness.
+The motivation of seeking explanatory power, creativity, and the desire to reason are hard-coded in the system. In other words, a zombie AI that has no consciousness.
 </aside>
 
 - Latency / efficiency / scalability.
@@ -304,24 +306,38 @@ Outline recap:
 
 
 ## <span class="morph" style="--morph-name:letterA;">A. **Necessity**</span>
-<detaillevel3>
-- AGI should be able to **develop** **creative** yet still **persuasive** ideas by providing strong reasons to support them.
-- Necessity of AI2Reason = necessity of AGI
-- Why AGI? Self-improve intelligence :arrow_right: superintelligence :bangbang:
-- ~~Who knows how far we are from meeting with aliens? As long as we don't destroy ourselves before that ...~~
+<style scoped>
+.floatingl {
+  float: left;
+  width: 50%;
+}
+.floatingr {
+  float: right;
+  width: 50%;
+}
+section { font-size: 32px; }
+blockquote {
+    border-top: 0.1em dashed #555;
+    font-size: 60%;
+    margin-top: auto;
+}
+</style>
 
-<aside>
-I'd like to claim the necessity of AI2Reason by reducing it as the question of necessity of AGI.
-</aside>
-</detaillevel3>
+<div class="floatingl">
 
-- LLMs **dream/hullucinate/bullshit**. They care about
-    - :heavy_check_mark: what word will high likely follow the previous
-    - :heavy_check_mark: entertain human
-    -  :x: truth
-- We :hearts: LLMs because
-    - :heavy_check_mark: creativity
-    -  :x: intelligent system with strong **generalizability** that can be said as doing "reasoning"
+LLMs **dream/hallucinate/bullshit** because they care about:
+- :heavy_check_mark: what word will highly likely follow the previous
+- :heavy_check_mark: entertain human
+-  :x: truth
+</div>
+
+<div class="floatingr">
+
+We :hearts: LLMs because:
+- :heavy_check_mark: stochastic Language Processing Units (LPUs) <a href="#footnote-1">[1]</a>
+- :heavy_check_mark: creativity
+-  :x: intelligent sys w/ **generalizability**
+</div>
 
 <detaillevel2>
 <style scoped>
@@ -341,19 +357,19 @@ I'd like to claim the necessity of AI2Reason by reducing it as the question of n
 - More feasible than ever. We can
     - :repeat_one: **neuralize** many modules via auto-differentials
     - :speech_balloon: make use of the infinite expressive power of **natural language**
-    - :thought_balloon: take LLMs as working (not satisfying) **creative engine**
+    - :thought_balloon: take LLMs as working (not satisfying) "**creative engine**"
 - GPT-4 system:
     - A working (not that bad) example
 ## B. **Readiness** cont'
-- **Cognitive scientist** have been studying reasoning for a while
+- **Cognitive scientists** have been studying reasoning for a while
     - Relatively complete charaterization of the analogical reasoning procedure
-- **Formal method community / philosopher** have been studying logic for a while
+- **Formal method community & philosophers** have been studying logic for a while
     - Expressive formal logic: dependent type theory
 
 ## C. **Mutual benefit**
 - Mutual benefit between "**building**" and "**characterizing**"
 * :arrow_backward: Taking inspiration from theories on reasoning facilitates the development of AI.
-* :arrow_forward: At the same time, building computational model is a good way to **complement/connect** current normative/philosophical/explanatory theory and descriptive/psychological understandings. (Thus this is a way to characterize what is plausible for such kind a system.)
+* :arrow_forward: At the same time, building computational model is a good way to **complement/connect** current normative/philosophical/explanatory theory and descriptive/psychological understandings. (Thus this is a way to characterize what is **plausible** for such kind a system.)
 
 <aside>
 Connection: by providing implementation of descriptive theories, we can fill in practical gaps. By providing implementation of normative theories, we suggest feasible instantiation or alternatives.
@@ -378,17 +394,17 @@ Outline recap:
 2. Why important at this moment
 3. #### **Why is it hard but promising now**
     - <span class="morph" style="--morph-name:letterA;">A. Human is so smart</span>
-    - B. My Point of view
+    - B. My point of view
     - C. Under this view, how to frame the problem?
     - D. What's different from before?
 4. My Next step
 
 
 ## <span class="morph" style="--morph-name:letterA;">A. Human is so smart</span>
-Human can capture concepts in so little context, mimic rules from so few examples, yet still be able to generalize to genuinely new situations.
+"Humans can capture concepts in so little context, mimic rules from so few examples, yet still be able to generalize to genuinely new situations."
 
 <aside>
-- "The word "five" has the Roman numeral "iv" in it? Show me how you developments your answer."
+- "The word "five" has the Roman numeral "iv" in it? Show me how you develops your answer."
 </aside>
 
 <style scoped>
@@ -410,27 +426,48 @@ Human can capture concepts in so little context, mimic rules from so few example
     <img src="../figs/induction2.png" alt="" width="100%">
 </div>
 
-## B. My Point of view for AI2Reason
+## A. Human is so smart (cont')
+- Abstraction & categorization
+    - Family resemblance: no one feature is common to all members of a category
+- Structural relation understanding is uniquely human
+    - Not even GPT-4
+
+## B. My point of view for AI2Reason
 * People know LLM sucks in reasoning
     - Tried **heuristic-based** methods
     - Most try to improve its "performance" on "benchmarks".
-* Yet few people **sit down and think about what is reasoning**.
-    - Cognition >> pattern matching. Why expect solving reasoning in just a couple of years?
+* Yet few people **sit down and think about what reasoning is**.
+    - Cognition >> pattern matching. Why expect to solve reasoning in just a couple of years?
 * Long history in philosophy and psychology. Why not learn from them?
 
 ## C. My framing of the problem
-**Auto-differential neural-symbolic computational model.**
-- A **preliminary** plan, only suitable for early stage
-- :arrow_right: **High inductive bias**
-- :arrow_right: **High data efficiency**
-- :arrow_right: **Less flexible** (opposite to data-driven)
+1. Auto-differential **neural-symbolic** computational model
+- E.g. LLM-modulo
+- A. **High inductive bias**
+    - :arrow_right: **High data / sample efficiency** :+1:
+    - :arrow_right: **Less flexible** (opposite to data-driven) :-1:
+    - :arrow_right: A **preliminary** plan; only suitable for early stage
+- B. Only use neural components when necessary
+    - Interpretability
 
 <detaillevel3>
 <iframe src="./mindmap_231217.html" height="100%" width="100%" frameBorder="0"></iframe>
 </detaillevel3>
 
+## C. My framing of the problem (cont')
+2. Start with **mathematical formal language** as **gymnasium / playground**
+- **Verifiable**: the proof can be certificated. IOW, a simplified world model of math that tells consequences of proposed actions.
+- Nice **special case** to work on before generalizing to other domains
+- Can exemplify **many reasoning abilities** and all hard
+
+## C. My framing of the problem (cont')
+3. Low-hanging fruit: deliberate reasoning.
+- Core: **Working memory** - Long-term memory interaction
+- Mechanism: system 2 **supervises** system 1 and takes over when necessary
+- Property: **flexible** computation time
+
 ## D. What's different from before?
-Why haven't been solved before but promising now?
+Why hasn't been solved before but promising now?
 * Automated theorem proving is getting more and more attention. Better tools and **infrastructure** are built.
 * Language is powerful.
     - LLMs enable the connection of different modules.
@@ -454,11 +491,11 @@ Outline recap:
 
 ## <!---fit---> Study reasoning process in doing math cont'
 
-* AI4MATH? It is just a play ground. Math is the most abstract and formal yet established language we have. It is the best way to test the reasoning ability of an AI system.
+* AI4MATH? It is just a playground. Math is the most abstract and formal yet established language we have. It is the best way to test the reasoning ability of an AI system.
 
-* Automated theorem proving? Again, a play ground that is well-defined and established.
+* Automated theorem proving? Again, a playground that is well-defined and established.
 
-* **Verifiable** mathematical formal language: a preliminary interface between human and computer on doing proof
+* **Verifiable** mathematical formal language: a preliminary interface between humans and computers in doing proof
 
 <detaillevel1>
 <figure>
@@ -494,13 +531,21 @@ section { font-size: 30px; }
 - zory_zhang@X;
 - zoryzhang@wechat
 
-Join Discord right now to see what exciting things are happening! We welcome everyone who is interested in this direction.
+Join Discord right now to see what exciting things are happening! We welcome everyone interested in this direction
 
 Thank You! Q&A time!
 </p>
 </div>
+
 <div class="floatingr">
 
 **AI2Reason Community@Discord**
 <a border="0" style="cursor:default" rel="nofollow"></a><img src="../figs/discord_qr.png" width="90%">
 </div>
+
+
+# References
+<h4></h4>
+<sub><sub><sub><ol>
+    <li id="footnote-1">Taken from Omar Khattab. (https://twitter.com/lateinteraction/status/1736119027997831210)</li>
+</ol></sub></sub></sub>
