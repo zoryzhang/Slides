@@ -215,8 +215,7 @@ Go beyond case-by-case abstraction
 2. Viewpoints
 * **Building**: ask for powerful **artificial** intelligence
 * **Modeling**: use computational model to **formalize** theories of **human** intelligence.
-    - Psychological/descriptive/behavioral observation
-    - Philosophical/normative/prescriptive theory
+    - Good theory predicts. Modeling tests the theory by comparing the prediction with human behavior on new data.
 * **Characterizing**: both work on **intelligence**, therefore suggest **plausible** approaches to achieve intelligence.
 
 ## B. Goal of AI2Reason (cont')
@@ -425,6 +424,7 @@ Outline recap:
 ## C. My framing of the problem (cont')
 1. **Auto-differential** neural-symbolic model
 - Back-propagation is beautiful yet seductive
+    - Neural-symbolic training is tricky
 - Causality is the elephant in the room
 
 ## C. My framing of the problem (cont')
